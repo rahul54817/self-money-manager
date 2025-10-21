@@ -8,6 +8,7 @@ import {
   Settings,
   Menu,
   X,
+  CreditCard,
 } from "lucide-react";
 
 export default function Sidebar() {
@@ -19,6 +20,7 @@ export default function Sidebar() {
     { name: "Expenses", icon: <Wallet size={20} />, path: "/expense" },
     { name: "Reports", icon: <BarChart2 size={20} />, path: "/reports" },
     { name: "Settings", icon: <Settings size={20} />, path: "/settings" },
+    { name: "EMI Tracker", path: "/emi", icon: <CreditCard size={20} /> },
   ];
 
   return (
