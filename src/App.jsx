@@ -7,6 +7,9 @@ import Sidebar from "./components/Sidebar";
 import Dashboard from "./pages/Dashboard";
 import "./App.css";
 import Settings from "./pages/Settings.jsx";
+import EMI from "./pages/EMI.jsx";
+import EMIPlans from "./pages/EMIPlans.jsx";
+import EMIDetails from "./pages/EMIDetails.jsx";
 
 
 function App() {
@@ -23,6 +26,8 @@ function App() {
               <Route path="/expense" element={<Expense />} />
               <Route path="/reports" element={<Reports />} />
               <Route path="/settings" element={<Settings />} /> 
+              <Route path="/emi" element={<EMIPlans />} />
+              <Route path="/emi/:id" element={<EMIDetails />} />
             </Routes>
           </div>
         </div>
