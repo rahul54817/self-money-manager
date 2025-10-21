@@ -9,6 +9,7 @@ import {
   Menu,
   X,
   CreditCard,
+  BadgeIndianRupee,
 } from "lucide-react";
 
 export default function Sidebar() {
@@ -21,6 +22,8 @@ export default function Sidebar() {
     { name: "Reports", icon: <BarChart2 size={20} />, path: "/reports" },
     { name: "Settings", icon: <Settings size={20} />, path: "/settings" },
     { name: "EMI Tracker", path: "/emi", icon: <CreditCard size={20} /> },
+    { name: "Lent/Borrowed", icon: <BadgeIndianRupee size={20} />, path: "/loans" },
+
   ];
 
   return (

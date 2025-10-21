@@ -10,6 +10,11 @@ import Settings from "./pages/Settings.jsx";
 import EMI from "./pages/EMI.jsx";
 import EMIPlans from "./pages/EMIPlans.jsx";
 import EMIDetails from "./pages/EMIDetails.jsx";
+import Loans from "./pages/Loan.jsx";
+import LoansHome from "./pages/LoansHome.jsx";
+import PersonList from "./pages/PersonList.jsx";
+import PersonDetails from "./pages/PersonDetails.jsx";
+import AddPersonForm from "./pages/AddPersonForm.jsx";
 
 
 function App() {
@@ -28,6 +33,10 @@ function App() {
               <Route path="/settings" element={<Settings />} /> 
               <Route path="/emi" element={<EMIPlans />} />
               <Route path="/emi/:id" element={<EMIDetails />} />
+              <Route path="/loans" element={<LoansHome />} />
+              <Route path="/loans/:type" element={<PersonList />} />
+              <Route path="/loans/:type/:personId" element={<PersonDetails />} />
+              <Route path="/loans/:type/add" element={<AddPersonForm />} />
             </Routes>
           </div>
         </div>
